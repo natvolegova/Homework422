@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/add_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/white"
+android:gravity="center_vertical"
+android:orientation="vertical"
+android:padding="16dp"
+android:visibility="gone"
+>
+
+<EditText
+    android:id="@+id/input_title"
+    style="@style/input"
+    android:ems="10"
+    android:hint="@string/input_title"
+    android:inputType="textPersonName" />
+
+<EditText
+    android:id="@+id/input_subtitle"
+    style="@style/input"
+    android:layout_height="100dp"
+    android:ems="10"
+    android:gravity="start|top"
+    android:hint="@string/input_subtitle"
+    android:inputType="textMultiLine" />
+
+<Spinner
+    android:id="@+id/list_task"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:entries="@array/list_task"
+    android:padding="8dp" />
+
+<Button
+    android:id="@+id/add_task"
+    style="@style/button"
+    android:text="@string/btn_add_task" />
+
+</LinearLayout>
